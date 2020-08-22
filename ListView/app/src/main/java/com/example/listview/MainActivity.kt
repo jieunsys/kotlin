@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         listView1.setOnItemClickListener { adapterView, view, pos, l ->
             val clickedOneRoom = mOneRoomList[pos]
-            Toast.makeText(this, clickedOneRoom.title, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, clickedOneRoom.title + clickedOneRoom.deposit , Toast.LENGTH_SHORT).show()
         }
     }
 }
